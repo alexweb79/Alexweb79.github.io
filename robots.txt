@@ -1,0 +1,7 @@
+User-Agent: Yandex
+allow: /
+Sitemap: https://alexweb79.ru/sitemap.xml
+
+User-Agent: *
+allow: /
+Sitemap: https://alexweb79.ru/sitemap.xml

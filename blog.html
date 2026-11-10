@@ -9,38 +9,190 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="/assets/styles/app.min.css">
     <script src="/assets/scripts/bundle.js" defer></script>
+    <script src="/assets/images/water/water.js" defer></script>
+    <script src="/assets/images/water/water.js.map" defer></script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   </head>
   <body>
-    <h1>Блог</h1>
-    <footer>
-      <div class="footer-row">
-        <div class="footer-col">
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+    <div class="wrapper">
+      <section class="section hero">
+        <div class="hero__social-and-menu">
+          <div class="hero__socials">
+            <div class="welcome-social__wrap">
+              <ul class="welcome-social"></ul>
+              <li class="social__item social__item-about"><a class="social__item_vk" href="https://vk.com/alexweb">
+                  <svg width="30px" height="17px">
+                    <use xlink:href="assets/images/icons/sprite-welcome-icon.svg#vk"></use>
+                  </svg></a></li>
+              <li class="social__item social__item-about"><a class="social__item_github" href="https://github.com/alexweb79/">
+                  <svg width="26px" height="22px">
+                    <use xlink:href="assets/images/icons/sprite-welcome-icon.svg#github"></use>
+                  </svg></a></li>
+              <li class="social__item social__item-about"><a class="social__item_in" href="https://linkedin.com/in/alexweb79/">
+                  <svg width="24px" height="23px">
+                    <use xlink:href="assets/images/icons/sprite-welcome-icon.svg#in"></use>
+                  </svg></a></li>
+            </div>
+          </div>
+          <div class="hero__menu">
+            <div class="hamburger" id="hamburger-11"><span class="line"></span><span class="line"></span><span class="line"></span></div>
+          </div>
+          <div class="block__main-menu hidden">
+            <div class="main-menu">
+              <ul class="main-menu__list">
+                <li class="main-menu__item"><a class="main-menu__link" href="/my-works.html">Мои работы</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="/about.html">Обо мне</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="/blog.html">Блог</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="/index.html">Авторизация</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="footer-col">
-          <ul class="menu">
-            <li><a href="/my-works.html">Мои работы</a></li>
-            <li><a href="/about.html">Обо мне</a></li>
-            <li><a href="/blog.html">Блог</a></li>
-            <li><a href="/index.html">Авторизация</a></li>
+        <div class="hero__title">
+          <div class="section-title"></div>
+          <div class="user hero__user">
+            <div class="user__pic welcome-center__foto"><img class="user__pic-img welcome-center__img" src="assets/images/img/Alex.jpeg" alt=""></div>
+            <div class="user__description">
+              <div class="user__name welcome-center__name">Александр Смирнов</div>
+              <div class="user__info welcome-center__option">Личный сайт разработчика</div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow-down hero__scroll-btn"><a href="#blockDown"><img src="assets/images/icons/arrow_down.svg" alt="arrow_down" title="arrow_down" id="arrowDown"></a></div>
+      </section>
+      <div class="triangle">
+        <div class="triangle__left">
+          <svg width="100%" height="100" viewBox="0 0 900.006 164.986" preserveAspectRatio="none">
+            <path class="triangle_fill_white" d="M0.01,0l899.997,159.008v854.979H0L0.01,0z"></path>
+          </svg>
+        </div>
+        <div class="triangle__right">
+          <svg width="100%" height="100" viewBox="0 0 900.006 160.986" preserveAspectRatio="none">
+            <path class="triangle_fill_white" d="M0,155.008L900.331,0l-0.005,1009.986H0V155.008z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="block-title block-title__blog-page" id="blockDown">
+        <div class="block-title__title block-title__title-color-black block-title__title-bigger">Блог</div>
+        <div class="block-title__title block-title__description-color-gray">Статьи, которые я написал</div>
+      </div>
+      <section class="section blog">
+        <div class="menu-left">
+          <input class="hidden-menu-ticker" type="checkbox" id="hmt">
+          <label class="btn-menu circle" for="hmt"></label>
+          <ul class="hidden-menu blog-menu__list">
+            <li class="blog-menu___item blog-menu___item-color-green"><a class="blog-menu__link blog-menu__link-color-white" href="#first">Самое важное в SASS</a></li>
+            <li class="blog-menu___item blog-menu___item-color-green"><a class="blog-menu__link blog-menu__link-color-white" href="#second">Приемы в верстке, без которых не обходится ни один сайт</a></li>
+            <li class="blog-menu___item blog-menu___item-color-green"><a class="blog-menu__link blog-menu__link-color-white" href="#third">Самый необходимый набор Gulp плагинов</a></li>
+            <li class="blog-menu___item blog-menu___item-color-green"><a class="blog-menu__link blog-menu__link-color-white" href="#fourth">Почему я выбрал Jade</a></li>
           </ul>
-          <ul class="social-footer"></ul>
-          <li><img src="assets/images/icons/vk.svg"></li>
-          <li><img src="assets/images/icons/github.svg"></li>
-          <li><img src="assets/images/icons/in.svg"></li>
         </div>
-        <div class="footer-col">
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
+        <aside class="aside blog__left-col">
+          <nav class="left-col__blog-menu" id="fixmenu">
+            <ul class="blog-menu__list">
+              <li class="blog-menu___item blog-menu___item-color-white"><a class="blog-menu__link blog-menu__link-color-gray" href="#first" data-scroll="first">Самое важное в SASS</a></li>
+              <li class="blog-menu___item blog-menu___item-color-white"><a class="blog-menu__link blog-menu__link-color-gray" href="#second" data-scroll="second">Приемы в верстке, без которых не обходится ни один сайт</a></li>
+              <li class="blog-menu___item blog-menu___item-color-white"><a class="blog-menu__link blog-menu__link-color-gray" href="#third" data-scroll="third">Самый необходимый набор Gulp плагинов</a></li>
+              <li class="blog-menu___item blog-menu___item-color-white"><a class="blog-menu__link blog-menu__link-color-gray" href="#fourth" data-scroll="fourth">Почему я выбрал Jade</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <article class="article blog__right-col">
+          <ul class="article__list">
+            <li class="article__item">
+              <div class="article-blog">
+                <div class="article__title" id="first" data-anchor="first">
+                  <h2>Самое важное в SASS</h2><a id="first"></a>
+                </div>
+                <div class="article__date"><span>01.09.2017</span></div>
+                <div class="article__text">
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад за сих большого коварных, подзаголовок дороге это снова живет грустный, то переписывается! Приставка большого дорогу раз назад даль первую алфавит которое осталось, несколько обеспечивает там знаках города взгляд ему. Большого власти собрал инициал. Выйти переулка имеет пояс, переписывается точках строчка даже собрал lorem дал назад на берегу сбить букв они все проектах прямо бросил текстами, обеспечивает вдали, путь составитель там страну одна? Ее наш однажды родного, своего свою снова гор, оксмокс продолжил ему грамматики алфавит всеми семантика прямо то дорогу себя послушавшись, своих решила пояс ты взгляд дал. О, имеет.</p>
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад за сих большого коварных, подзаголовок дороге это снова живет грустный, то переписывается! Приставка большого дорогу раз назад даль первую алфавит которое осталось, несколько обеспечивает там знаках города взгляд ему. Большого власти собрал инициал. Выйти переулка имеет пояс, переписывается точках строчка даже собрал lorem дал назад на берегу сбить букв они все проектах прямо бросил текстами, обеспечивает вдали, путь составитель там страну одна? Ее наш однажды родного, своего свою снова гор, оксмокс продолжил ему грамматики алфавит всеми семантика прямо то дорогу себя послушавшись, своих решила пояс ты взгляд дал. О, имеет.</p><img src="/assets/images/img/code.png" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article-blog">
+                <div class="article__title" id="second" data-anchor="second">
+                  <h2>Приемы в верстке, без которых не обходится ни один сайт</h2><a id="second"></a>
+                </div>
+                <div class="article__date"><span>02.09.2017</span></div>
+                <div class="article__text">
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад за сих большого коварных, подзаголовок дороге это снова живет грустный, то переписывается! Приставка большого дорогу раз назад даль первую алфавит которое осталось, несколько обеспечивает там знаках города взгляд ему. Большого власти собрал инициал. Выйти переулка имеет пояс, переписывается точках строчка даже собрал lorem дал назад на берегу сбить букв они все проектах прямо бросил текстами, обеспечивает вдали, путь составитель там страну одна? Ее наш однажды родного, своего свою снова гор, оксмокс продолжил ему грамматики алфавит всеми семантика прямо то дорогу себя послушавшись, своих решила пояс ты взгляд дал. О, имеет.</p>
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад за сих большого коварных, подзаголовок дороге это снова живет грустный, то переписывается! Приставка большого дорогу раз назад даль первую алфавит которое осталось, несколько обеспечивает там знаках города взгляд ему. Большого власти собрал инициал. Выйти переулка имеет пояс, переписывается точках строчка даже собрал lorem дал назад на берегу сбить букв они все проектах прямо бросил текстами, обеспечивает вдали, путь составитель там страну одна? Ее наш однажды родного, своего свою снова гор, оксмокс продолжил ему грамматики алфавит всеми семантика прямо то дорогу себя послушавшись, своих решила пояс ты взгляд дал. О, имеет.</p><img src="" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article-blog">
+                <div class="article__title" id="third" data-anchor="third">
+                  <h2>Самый необходимый набор Gulp плагинов</h2><a id="third"></a>
+                </div>
+                <div class="article__date"><span>03.09.2017</span></div>
+                <div class="article__text">
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад за сих большого коварных, подзаголовок дороге это снова живет грустный, то переписывается! Приставка большого дорогу раз назад даль первую алфавит которое осталось, несколько обеспечивает там знаках города взгляд ему. Большого власти собрал инициал. Выйти переулка имеет пояс, переписывается точках строчка даже собрал lorem дал назад на берегу сбить букв они все проектах прямо бросил текстами, обеспечивает вдали, путь составитель там страну одна? Ее наш однажды родного, своего свою снова гор, оксмокс продолжил ему грамматики алфавит всеми семантика прямо то дорогу себя послушавшись, своих решила пояс ты взгляд дал. О, имеет.</p>
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад за сих большого коварных, подзаголовок дороге это снова живет грустный, то переписывается! Приставка большого дорогу раз назад даль первую алфавит которое осталось, несколько обеспечивает там знаках города взгляд ему. Большого власти собрал инициал. Выйти переулка имеет пояс, переписывается точках строчка даже собрал lorem дал назад на берегу сбить букв они все проектах прямо бросил текстами, обеспечивает вдали, путь составитель там страну одна? Ее наш однажды родного, своего свою снова гор, оксмокс продолжил ему грамматики алфавит всеми семантика прямо то дорогу себя послушавшись, своих решила пояс ты взгляд дал. О, имеет.</p><img src="" alt="">
+                </div>
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article-blog">
+                <div class="article__title" id="fourth" data-anchor="fourth">
+                  <h2>Почему я выбрал Jade</h2><a id="fourth"></a>
+                </div>
+                <div class="article__date"><span>04.09.2017</span></div>
+                <div class="article__text">
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад за сих большого коварных, подзаголовок дороге это снова живет грустный, то переписывается! Приставка большого дорогу раз назад даль первую алфавит которое осталось, несколько обеспечивает там знаках города взгляд ему. Большого власти собрал инициал. Выйти переулка имеет пояс, переписывается точках строчка даже собрал lorem дал назад на берегу сбить букв они все проектах прямо бросил текстами, обеспечивает вдали, путь составитель там страну одна? Ее наш однажды родного, своего свою снова гор, оксмокс продолжил ему грамматики алфавит всеми семантика прямо то дорогу себя послушавшись, своих решила пояс ты взгляд дал. О, имеет.</p>
+                  <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Назад за сих большого коварных, подзаголовок дороге это снова живет грустный, то переписывается! Приставка большого дорогу раз назад даль первую алфавит которое осталось, несколько обеспечивает там знаках города взгляд ему. Большого власти собрал инициал. Выйти переулка имеет пояс, переписывается точках строчка даже собрал lorem дал назад на берегу сбить букв они все проектах прямо бросил текстами, обеспечивает вдали, путь составитель там страну одна? Ее наш однажды родного, своего свою снова гор, оксмокс продолжил ему грамматики алфавит всеми семантика прямо то дорогу себя послушавшись, своих решила пояс ты взгляд дал. О, имеет.</p><img src="" alt="">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <footer class="map__footer footer">
+        <div class="footer__row">
+          <div class="footer__row-margin">
+            <div class="footer__col footer__col-left">
+              <p>Я веб-разработчик из Твери, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</p>
+            </div>
+            <div class="footer__col footer__col-center">
+              <div class="menu-footer">
+                <ul class="menu-footer__list"></ul>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="/my-works.html">Мои работы</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="/about.html">Обо мне</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="/blog.html">Блог</a></li>
+                <li class="menu-footer__item"><a class="menu-footer__link" href="/index.html">Авторизация</a></li>
+              </div>
+              <div class="welcome-social__wrap">
+                <ul class="welcome-social"></ul>
+                <li class="social__item social__item-about"><a class="social__item_vk" href="https://vk.com/alexweb">
+                    <svg width="30px" height="17px">
+                      <use xlink:href="assets/images/icons/sprite-welcome-icon.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social__item social__item-about"><a class="social__item_github" href="https://github.com/alexweb79/">
+                    <svg width="26px" height="22px">
+                      <use xlink:href="assets/images/icons/sprite-welcome-icon.svg#github"></use>
+                    </svg></a></li>
+                <li class="social__item social__item-about"><a class="social__item_in" href="https://linkedin.com/in/alexweb79/">
+                    <svg width="24px" height="23px">
+                      <use xlink:href="assets/images/icons/sprite-welcome-icon.svg#in"></use>
+                    </svg></a></li>
+              </div>
+            </div>
+            <div class="footer__col footer__col-right">
+              <p>Всегда пишите код так, будто сопровождать <br>его будет склонный к насилию психопат, <br>который знает, где вы живете. <br><strong>- Martin Golding<strong></p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="footer-row">
-        <div class="footer-copyright">
-          <p class="copyright">&copy; Александр Смирнов | LoftSchool 2017</p>
+        <div class="footer__row">
+          <div class="footer-copyright">
+            <p class="copyright">&copy; Александр Смирнов | LoftSchool 2017</p>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

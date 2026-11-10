@@ -9,32 +9,88 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="/assets/styles/app.min.css">
     <script src="/assets/scripts/bundle.js" defer></script>
+    <script src="/assets/images/water/water.js" defer></script>
+    <script src="/assets/images/water/water.js.map" defer></script>
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   </head>
   <body>
-    <div class="container container-welcome">
-      <div class="welcome-login"><a class="welcome-login-btn" href="/login.html">Авторизоваться</a></div>
-      <div class="welcome-center">
-        <div><img class="welcome-center-foto" src="assets/images/img/Alex.jpeg" alt="Александр Смирнов"></div><span class="welcome-center-name">Александр Смирнов</span><span class="welcome-center-title">Личный сайт веб разработчика</span>
-        <div>
-          <ul class="social-welcome">
-            <li class="social-welcome-item"><a class="social-welcome-item-vk" href="https://vk.com/alexweb"><img src="assets/images/icons/vk.svg" alt=""></a></li>
-            <li class="social-welcome-item"><a class="social-welcome-item-github" href="https://github.com/alexweb79/"><img src="assets/images/icons/github.svg" alt=""></a></li>
-            <li class="social-welcome-item"><a class="social-welcome-item-in" href="https://linkedin.com/alexweb79/"><img src="assets/images/icons/in.svg" alt=""></a></li>
-          </ul>
+    <div class="wrapper">
+      <div class="Background">
+        <canvas class="Background-canvas"></canvas>
+        <div class="container container-welcome">
+          <div class="welcome-login">
+            <button class="welcome-login__btn flip-button" data-toggle-text="На главную"><span class="welcome-login__text">Авторизоваться</span></button>
+          </div>
+          <div class="front flipInY">
+            <div class="welcome-center">
+              <div class="welcome-center__foto"><img class="welcome-center__img" src="assets/images/img/Alex.jpeg" alt="Александр Смирнов"></div><span class="welcome-center__name">Александр Смирнов</span><span class="welcome-center__option">Личный сайт веб разработчика</span>
+              <div class="welcome-social__wrap">
+                <ul class="welcome-social"></ul>
+                <li class="social__item social__item-about"><a class="social__item_vk" href="https://vk.com/alexweb">
+                    <svg width="30px" height="17px">
+                      <use xlink:href="assets/images/icons/sprite-welcome-icon.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social__item social__item-about"><a class="social__item_github" href="https://github.com/alexweb79/">
+                    <svg width="26px" height="22px">
+                      <use xlink:href="assets/images/icons/sprite-welcome-icon.svg#github"></use>
+                    </svg></a></li>
+                <li class="social__item social__item-about"><a class="social__item_in" href="https://linkedin.com/in/alexweb79/">
+                    <svg width="24px" height="23px">
+                      <use xlink:href="assets/images/icons/sprite-welcome-icon.svg#in"></use>
+                    </svg></a></li>
+              </div>
+              <div class="button-welcome-fix-fontsize">
+                <ul class="button-welcome">
+                  <li class="button-welcome__item"><a href="/my-works.html">Мои работы</a></li>
+                  <li class="button-welcome__item"><a href="/about.html">Обо мне</a></li>
+                  <li class="button-welcome__item"><a href="/blog.html">Блог</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="back hidden flipInY">
+            <div class="welcome-center">
+              <div class="welcome-center__wrap-title">
+                <div class="block-title__title block-title__title-color-white block-title__title-smoller">Авторизуйтесь</div>
+              </div>
+              <div class="welcome-center__welcome-form">
+                <form class="welcome-form" action="#" method="post">
+                  <label class="welcome-form__login">
+                    <input type="text" name="login" id="login" placeholder="Логин">
+                  </label>
+                  <label class="welcome-form__password">
+                    <input type="password" name="password" id="password" placeholder="Пароль">
+                  </label>
+                  <label class="welcome-form__man">
+                    <input type="checkbox" name="man" id="man"><span class="welcome-form__label-text">Я человек</span>
+                  </label>
+                  <label class="welcome-form__questions">Вы точно не робот?</label>
+                  <div class="welcome-form__radio">
+                    <label class="welcome-form__yes-no">
+                      <input type="radio" name="yes-no" id="yes"><span class="welcome-form__label-text">Да</span>
+                    </label>
+                    <label class="welcome-form__yes-no">
+                      <input type="radio" name="yes-no" id="no"><span class="welcome-form__label-text">Не уверен</span>
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="button-login__wrap">
+                <ul class="button-login">
+                  <li class="button-login__item"><a href="/index.html">На главную</a></li>
+                  <li class="button-login__item">
+                    <button>Войти</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="welcome-footer">
+            <p class="welcome-footer__copyright">&copy; Александр Смирнов | LoftSchool 2017</p>
+          </div>
         </div>
-        <div class="button-welcome-fontsize">
-          <ul class="button-welcome">
-            <li class="button-welcome-item"><a href="/my-works.html">Мои работы</a></li>
-            <li class="button-welcome-item"><a href="/about.html">Обо мне</a></li>
-            <li class="button-welcome-item"><a href="/blog.html">Блог</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="welcome-footer-copyright">
-        <p class="copyright">&copy; Александр Смирнов | LoftSchool 2017</p>
       </div>
     </div>
   </body>
